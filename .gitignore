@@ -1,0 +1,57 @@
+# --- Виртуальное окружение (САМОЕ ВАЖНОЕ) ---
+# Не грузи окружение на GitHub, его каждый ставит у себя сам
+venv/
+.venv/
+env/
+ENV/
+
+# --- Файлы Python ---
+__pycache__/
+*.py[cod]
+*\$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Переменные окружения и секреты (ТОЖЕ ВАЖНО) ---
+# Сюда выноси токены, пароли и ключи, чтобы не слить их на GitHub
+.env
+.env.local
+.env.*.local
+
+# --- IDE (PyCharm) ---
+# Настройки твоего конкретного компьютера не нужны в репозитории
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- ОС (Windows/Mac) ---
+.DS_Store
+Thumbs.db
+
+# --- Тесты и покрытие кода ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# --- Логи и базы данных (для разработки) ---
+# Если используешь SQLite локально для тестов
+*.log
+db.sqlite3
